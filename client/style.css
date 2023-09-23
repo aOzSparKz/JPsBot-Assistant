@@ -1,0 +1,204 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700;800;900&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;800;&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;800;&display=swap");
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Body styles */
+body {
+  background: #F6F8FB;
+  overflow-x: hidden; /* Remove horizontal scroll */
+}
+
+/* App container styles */
+#app {
+  width: 100vw;
+  min-height: 100vh; /* Use min-height to ensure content stretches to at least the viewport height */
+  background: #3b2d4c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden; /* Hide any overflow */
+}
+
+/* Chat container styles */
+#chat_container {
+  flex: 1;
+  width: 100%;
+  max-height: calc(100vh - 100px); /* Adjust to leave space for the navbar */
+  overflow-y: auto; /* Add scrollbar when necessary */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  padding-bottom: 20px; /* Add space below the chat container */
+  scroll-behavior: smooth;
+  margin-top: 100px; /* Adjust the margin to leave space for the navbar */
+}
+
+/* Hide scrollbar */
+#chat_container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Wrapper styles */
+.wrapper {
+  width: 100%;
+  padding: 15px;
+}
+
+/* AI styles */
+.ai {
+  background: #644c86;
+}
+
+/* Chat styles */
+.chat {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+/* Profile styles */
+.profile {
+  width: 36px;
+  height: 36px;
+  border-radius: 5px;
+  background: #006DC3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* AI-specific profile styles */
+.ai .profile {
+  background: #00AFB4;
+}
+
+/* Profile image styles */
+.profile img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+}
+
+/* Message styles */
+.message {
+  flex: 1;
+  color: #dcdcdc;
+  font-size: 20px;
+  max-width: 100%;
+  overflow-x: scroll;
+  white-space: pre-wrap;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Hide scrollbar for messages */
+.message::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+
+/* Form styles */
+form {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 10px;
+  background: #644c86;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+/* Textarea styles */
+textarea {
+  width: 100%;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px;
+  background: transparent;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+/* Button styles */
+button {
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  background: transparent;
+}
+
+/* Form image styles */
+form img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #3b2d4c; /* Set your desired background color */
+  color: #3b2d4c;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Navbar image styles */
+.navbar img {
+  max-height: 50px;
+  max-width: 50%;
+}
+
+
+/* Button styles */
+.nav-button {
+  background-color:#FFFFFF; /* Transparent by default */
+  color: #3b2d4c; /* Text color */
+  padding: 10px 20px; /* Adjust padding as needed */
+  border: none;
+  border-radius: 30px; /* Rounded corners */
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Add transitions for smoother hover effect */
+}
+
+.nav-button:hover {
+  background-color: white; /* Change the button background color to white on hover */
+  color: #1F1F1F; /* Change text color on hover */
+}
+
+/* Footer styles */
+.footer {
+  background-color: #3b2d4c;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+
+}
+
+
